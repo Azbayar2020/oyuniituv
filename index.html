@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Оюуны Төв Бүрэн Дунд Сургууль</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg shadow-sm py-2" style="background-color: #4b287c;">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center text-white" href="#">
+        <img src="10-logo-oyunii-tuv%20(1).png" alt="Оюуны төв лого" height="50" class="me-2">
+
+      </a>
+      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center gap-3">
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">Нүүр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">Сургалтын хөтөлбөр</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">Сурагчийн амьдрал</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">Үйлчилгээ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white fw-semibold" href="#">Холбоо барих</a>
+          </li>
+        </ul>
+
+        <!-- Language dropdown -->
+        <div class="dropdown ms-3">
+          <button class="btn btn-sm dropdown-toggle text-white border-white" data-bs-toggle="dropdown">
+            <img src="https://flagcdn.com/w40/mn.png" width="24" alt="MN">
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/mn.png" width="24" class="me-2"> Монгол</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#"><img src="https://flagcdn.com/w40/gb.png" width="24" class="me-2"> English</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Carousel -->
+  <div id="smartCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="dist/images/sli.jpg" class="d-block w-100" alt="Слайд 1">
+        <div class="carousel-caption custom-caption text-white text-center">
+          <p class="slide-subtitle">Эрхэм зорилго</p>
+          <h5 class="slide-title">Бид цэвэр ёс суртахуунд</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="dist/images/sli2.jpg" class="d-block w-100" alt="Слайд 2">
+        <div class="carousel-caption custom-caption text-white text-center">
+          <p class="slide-subtitle">Эрхэм зорилго</p>
+          <h5 class="slide-title">Мэдлэг оюун ухааныг дээдлэн</h5>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="dist/images/sli3.jpg" class="d-block w-100" alt="Слайд 3">
+        <div class="carousel-caption custom-caption text-white text-center">
+          <p class="slide-subtitle">Эрхэм зорилго</p>
+          <h5 class="slide-title">Авьяас чадвараа хөгжүүлэн</h5>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://oyuniituv.mn/uploads/testimonial.jpg" class="d-block w-100" alt="Слайд 4">
+        <div class="carousel-caption custom-caption text-white text-center">
+          <p class="slide-subtitle">Эрхэм зорилго</p>
+          <h5 class="slide-title">Амьдрах арга ухаанд суралцсан</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://oyuniituv.mn/uploads/testimonial.jpg" class="d-block w-100" alt="Слайд 5">
+        <div class="carousel-caption custom-caption text-white text-center">
+          <p class="slide-subtitle">Эрхэм зорилго</p>
+          <h5 class="slide-title">Эрүүл чийрэг бие бялдартай</h5>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://oyuniituv.mn/uploads/testimonial.jpg" class="d-block w-100" alt="Слайд 5">
+        <div class="carousel-caption custom-caption text-white text-center">
+          <p class="slide-subtitle">Эрхэм зорилго</p>
+          <h5 class="slide-title">иргэнийг төлөвшүүлэн хөгжүүлнэ.</h5>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#smartCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#smartCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <!-- Tabs -->
+  <div class="container slider-tabs">
+    <div class="row g-2 justify-content-center text-center">
+      <div class="col-6 col-sm-4 col-md-2">
+        <button class="nav-link w-100 active text-center" data-bs-target="#smartCarousel" data-bs-slide-to="0" onclick="setActiveTab(this)">
+          <span class="sub__title d-block text-center"><i class="fas fa-school me-1"></i>Ёс суртахуун</span>
+        </button>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <button class="nav-link w-100 text-center" data-bs-target="#smartCarousel" data-bs-slide-to="1" onclick="setActiveTab(this)">
+          <span class="sub__title d-block text-center"><i class="fas fa-brain me-1"></i>Оюун ухаан</span>
+        </button>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <button class="nav-link w-100 text-center" data-bs-target="#smartCarousel" data-bs-slide-to="2" onclick="setActiveTab(this)">
+          <span class="sub__title d-block text-center"><i class="fas fa-lightbulb me-1"></i>Авьяас чадвар</span>
+        </button>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <button class="nav-link w-100 text-center" data-bs-target="#smartCarousel" data-bs-slide-to="3" onclick="setActiveTab(this)">
+          <span class="sub__title d-block text-center"><i class="fas fa-hand-holding-heart me-1"></i>Арга ухаан</span>
+        </button>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <button class="nav-link w-100 text-center" data-bs-target="#smartCarousel" data-bs-slide-to="4" onclick="setActiveTab(this)">
+          <span class="sub__title d-block text-center"><i class="fas fa-dumbbell me-1"></i>Эрүүл</span>
+        </button>
+      </div>
+      <div class="col-6 col-sm-4 col-md-2">
+        <button class="nav-link w-100 text-center" data-bs-target="#smartCarousel" data-bs-slide-to="5" onclick="setActiveTab(this)">
+          <span class="sub__title d-block text-center"><i class="fas fa-user-graduate me-1"></i>Иргэн</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Continuing from previous layout -->
+  <section class="taniltsuulga-section py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-6 text-primary">Бидний тухай</h2>
+        <p class="text-muted">Оюуны Төв сургуулийн үнэт зүйлс, онцлог давуу талууд</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 hover-zoom text-center p-4">
+            <div class="mb-3 text-primary fs-1">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h5 class="fw-bold">Манлайлагч сурагчид</h5>
+            <p class="text-muted">Сурагчийн оролцоо, манлайллыг дэмжсэн боловсролын орчин.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 hover-zoom text-center p-4">
+            <div class="mb-3 text-primary fs-1">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h5 class="fw-bold">СотА Хөтөлбөр</h5>
+            <p class="text-muted">Оюун ухаан, зан төлөв, бүтээлч байдлыг хөгжүүлэх интеграцчилсан арга зүй.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm border-0 hover-zoom text-center p-4">
+            <div class="mb-3 text-primary fs-1">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h5 class="fw-bold">Үнэт зүйлс</h5>
+            <p class="text-muted">Хүндлэл, хариуцлага, хамтын ажиллагаа зэрэг хүний эрхэм чанарыг төлөвшүүлдэг.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 why-choose-us text-white">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <!-- Text intro -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3 display-6">Биднийг <br><span class="text-warning">Яагаад сонгох вэ?</span></h2>
+          <p class="lead">Оюуны Төв сургууль нь сурагч бүрийн авьяас чадварыг нээн хөгжүүлэх олон улсын түвшний хөтөлбөр, дижитал орчин, бүтээлч уур амьсгалыг бүрдүүлдэг.</p>
+        </div>
+
+        <!-- Features -->
+        <div class="col-md-6">
+          <div class="d-flex mb-4">
+            <div class="feature-icon me-3"><i class="fas fa-chalkboard-teacher"></i></div>
+            <div>
+              <h5 class="fw-semibold">Мэргэшсэн Багш Нар</h5>
+              <p class="small">Гадаад болон дотоодын туршлагатай, сэтгэл зүтгэлтэй 140+ багш нар сурагч таныг хөтлөн чиглүүлнэ.</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <div class="feature-icon me-3"><i class="fas fa-vr-cardboard"></i></div>
+            <div>
+              <h5 class="fw-semibold">Ирээдүйн Ангилал</h5>
+              <p class="small">STEAM, AR/VR, кодчлол, лабораториуд, бүтээлч дизайн бүхий бүрэн тоноглогдсон орчин.</p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="feature-icon me-3"><i class="fas fa-rocket"></i></div>
+            <div>
+              <h5 class="fw-semibold">Амжилтад хүрэх зам</h5>
+              <p class="small">Сүүлийн жилүүдэд элсэлтийн дүн, олимпиадын амжилт, олон улсын хөтөлбөрт хамрагдалтаар тэргүүлсээр байна.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==========  ДУГУЙЛАНГИЙН FLIP-CARD (CIRCULAR)  ========== -->
+
+
+  <section class="py-5 bg-light">
+    <h2 class="text-center fw-bold">Манай дугуйлангууд</h2>
+    <div class="club-container">
+
+      <!-- Мэдээллийн технологи -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fas fa-paint-brush"></i>
+            <div class="club-title">Зураг</div>
+          </div>
+          <div class="flip-card-back">
+            Уран зургийн үндэс, өнгө, композици, бүтээлч арга барилыг практикээр заана.
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fas fa-laptop-code"></i>
+            <div class="club-title">Мэдээллийн технологи</div>
+          </div>
+          <div class="flip-card-back">
+            Код бичих, вэб хөгжүүлэлт, программ хангамжийн үндэс заана.
+          </div>
+        </div>
+      </div>
+
+      <!-- Хөгжим -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fas fa-music"></i>
+            <div class="club-title">Хөгжим</div>
+          </div>
+          <div class="flip-card-back">
+            Хөгжмийн зэмсэг тоглох, сонсгол, авьяас хөгжүүлэх дугуйлан.
+          </div>
+        </div>
+      </div>
+
+      <!-- Биеийн тамир -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fas fa-basketball-ball "></i>
+
+            <div class="club-title">Сагсан бөмбөг</div>
+          </div>
+          <div class="flip-card-back">
+            Сагсан бөмбөгийн үндсэн техник, багийн стратеги, харилцан ойлголтыг хөгжүүлнэ.
+          </div>
+        </div>
+      </div>
+
+      <!-- Волейбол -->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <i class="fas fa-volleyball-ball"></i>
+            <div class="club-title">Волейбол</div>
+          </div>
+          <div class="flip-card-back">
+            Багийн тоглолт, уралдаан тэмцээнд бэлтгэх спортын дугуйлан.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="bg-dark text-white py-5" style="background: url('dist/images/students-bg.jpg') no-repeat center center/cover;">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3">Манай зорилго</h2>
+      <p class="mb-4">Бидний сургуулийн гол үзүүлэлтүүдтэй танилцана уу</p>
+      <div class="row justify-content-center g-4">
+
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <div class="icon mb-2 text-success fs-1"><i class="fas fa-user-tie"></i></div>
+            <h3 class="counter display-6 fw-bold" data-target="20"></h3>
+            <p class="text-white-50">Багш нар</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <div class="icon mb-2 text-success fs-1"><i class="fas fa-school"></i></div>
+            <h3 class="counter display-6 fw-bold" data-target="2500"></h3>
+            <p class="text-white-50">Сурагчдын тоо</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <div class="icon mb-2 text-success fs-1"><i class="fas fa-graduation-cap"></i></div>
+            <h3 class="counter display-6 fw-bold" data-target="98"></h3>
+            <p class="text-white-50">Их дээд сургуульд элсэн орсон</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <div class="counter-box">
+            <div class="icon mb-2 text-success fs-1"><i class="fas fa-smile-beam"></i></div>
+            <h3 class="counter display-6 fw-bold" data-target="100"></h3>
+            <p class="text-white-50">Сэтгэл ханамжтай эцэг эх</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="py-5 bg-white">
+    <div class="container">
+      <ul class="nav highlight-tabs justify-content-center mb-4" id="highlightTabs" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#news" role="tab"> News</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#events" role="tab"> Events</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#donate" role="tab"> Donate</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#calendar" role="tab">Calendar</button></li>
+      </ul>
+      <!-- Tab Content -->
+      <div class="tab-content" id="highlightTabsContent">
+        <!-- Featured News Tab -->
+        <div class="tab-pane fade show active" id="news" role="tabpanel">
+          <div class="swiper newsSwiper">
+            <div class="swiper-wrapper">
+              <!-- slide -->
+              <div class="swiper-slide">
+                <div class="card news-card h-100">
+                  <img src="https://picsum.photos/400/250?random=1" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6>We are at Independent Schools Show</h6>
+                    <p class="text-muted small mb-0">2025-06-01</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ...дэмжсэн бусад слайд -->
+              <div class="swiper-slide">
+                <div class="card news-card h-100">
+                  <img src="https://picsum.photos/400/250?random=2" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6>High School students share Shakespeare’s stage</h6>
+                    <p class="text-muted small mb-0">2025-05-28</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card news-card h-100">
+                  <img src="https://picsum.photos/400/250?random=3" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6>High School students share Shakespeare’s stage</h6>
+                    <p class="text-muted small mb-0">2025-05-28</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card news-card h-100">
+                  <img src="https://picsum.photos/400/250?random=4" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h6>High School students share Shakespeare’s stage</h6>
+                    <p class="text-muted small mb-0">2025-05-28</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination mt-3"></div>
+          </div>
+          <div class="text-end pt-2">
+            <a href="#" class="btn btn-sm btn-gradient">Мэдээний архив &nbsp;➜</a>
+          </div>
+        </div>
+
+        <!-- Upcoming Events Tab -->
+        <!-- Events -->
+        <div class="tab-pane fade" id="events" role="tabpanel">
+          <div class="row g-4">
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="cal-card p-4 d-flex">
+                <div class="me-3 text-center">
+                  <div class="cal-date">08</div>
+                  <small class="text-muted">Nov</small>
+                </div>
+                <div>
+                  <h6>Year-7 Taster Day</h6>
+                  <p class="mb-1 text-success small">All day • UB</p>
+                  <p class="mb-0 text-muted">Year-6 pupils are invited to join a taster day.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="cal-card p-4 d-flex">
+                <div class="me-3 text-center">
+                  <div class="cal-date">08</div>
+                  <small class="text-muted">Nov</small>
+                </div>
+                <div>
+                  <h6>Year-7 Taster Day</h6>
+                  <p class="mb-1 text-success small">All day • UB</p>
+                  <p class="mb-0 text-muted">Year-6 pupils are invited to join a taster day.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="cal-card p-4 d-flex">
+                <div class="me-3 text-center">
+                  <div class="cal-date">08</div>
+                  <small class="text-muted">Nov</small>
+                </div>
+                <div>
+                  <h6>Year-7 Taster Day</h6>
+                  <p class="mb-1 text-success small">All day • UB</p>
+                  <p class="mb-0 text-muted">Year-6 pupils are invited to join a taster day.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="cal-card p-4 d-flex">
+                <div class="me-3 text-center">
+                  <div class="cal-date">08</div>
+                  <small class="text-muted">Nov</small>
+                </div>
+                <div>
+                  <h6>Year-7 Taster Day</h6>
+                  <p class="mb-1 text-success small">All day • UB</p>
+                  <p class="mb-0 text-muted">Year-6 pupils are invited to join a taster day.</p>
+                </div>
+              </div>
+            </div>
+            <!-- More cards ... -->
+          </div>
+
+        </div>
+        <div class="tab-pane fade" id="donate" role="tabpanel">
+          <div class="p-4 cal-card" data-aos="zoom-in">
+            <h6><i class="fas fa-heart text-danger me-2"></i>Support Our School</h6>
+            <p class="mb-2">Таны хандив сургуулийн дэд бүтэц, тэтгэлэг, сургалтын шинэчлэлд зарцуулагдана.</p>
+            <a href="#" class="btn btn-gradient">Donate via QPay</a>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="calendar" role="tabpanel">
+          <div class="row g-4">
+
+            <!-- Month card -->
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="cal-card p-3">
+                <h6 class="mb-2"><i class="fas fa-calendar-alt me-1 text-success"></i> June 2025</h6>
+                <ul class="list-unstyled">
+                  <li>• 18 — Graduation Day</li>
+                  <li>• 21 — Summer break begins</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Month card -->
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="cal-card p-3">
+                <h6 class="mb-2"><i class="fas fa-calendar-alt me-1 text-success"></i> September 2025</h6>
+                <ul class="list-unstyled">
+                  <li>• 1 — First day of school</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+  <section class="py-5 bg-light" id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold display-6 text-primary">Үйлчилгээ</h2>
+        <p class="text-muted">Сурагч, эцэг эх, хамт олонд зориулсан бидний үйл ажиллагаа</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 hover-zoom">
+            <div class="mb-3 text-success fs-1">
+              <i class="fas fa-bus"></i>
+            </div>
+            <h5 class="fw-bold">Тээврийн үйлчилгээ</h5>
+            <p class="text-muted">Сурагчдыг өглөө орой аюулгүй, тав тухтай тээвэрлэх үйлчилгээтэй.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 hover-zoom">
+            <div class="mb-3 text-success fs-1">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <h5 class="fw-bold">Цайны газар</h5>
+            <p class="text-muted">Эрүүл хоол хүнсээр хангагдсан, олон сонголттой цайны газар ажилладаг.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm text-center p-4 hover-zoom">
+            <div class="mb-3 text-success fs-1">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <h5 class="fw-bold">Сэтгэл зүйн зөвлөгөө</h5>
+            <p class="text-muted">Сурагчийн зан төлөв, сэтгэл зүйд анхаарсан мэргэжлийн зөвлөгөө өгдөг.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features text-center">
+    <div class="container" data-aos="fade-up" data-aos-duration="800">
+      <!-- <h2>Бидний тухай</h2> -->
+      <div class="row gy-4 justify-content-center">
+        <!-- Item 1 -->
+        <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="feature-box">
+            <div class="icon-badge"><i class="bi bi-journals"></i></div>
+            <div class="feature-circle"><img src="dist/images/sli2.jpg" alt="Хувьчилсан"></div>
+            <h5>Хувьчилсан</h5>
+            <p>Англи хэл, Математик,<br>Шинжлэх ухаан,<br>Нийгмийн хичээлүүд<br>Англи хэл дээр ОУ-ын SOTA хөтөлбөрөөр</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="feature-box">
+            <div class="icon-badge"><i class="bi bi-people-fill"></i></div>
+            <div class="feature-circle"><img src="dist/images/sli3.jpg" alt="Хамтарсан"></div>
+            <h5>Хамтарсан</h5>
+            <p>МУ-ын стандарт хөтөлбөр,<br>Зан чанар, ёс зүйн хичээл<br>болон Авьяас чадвар<br>хөгжүүлэх дугуйлангуудтай</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="col-12 col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="feature-box">
+            <div class="icon-badge"><i class="bi bi-globe2"></i></div>
+            <div class="feature-circle"><img src="dist/images/sli.jpg" alt="Хил хязгаар тэлсэн"></div>
+            <h5>Хил хязгаар тэлсэн</h5>
+            <p>Олон улсын сурагчдын<br>тэмцээнд тогтмол<br>хамрагдах боломжтой</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" style="background: linear-gradient(to right, #f7f7fb, #e5e5f7);">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Текст хэсэг -->
+        <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+          <h2 class="fw-bold text-primary mb-3">Видео Танилцуулга</h2>
+          <p class="text-muted fs-5">
+            Бидний сургалтын орчин, сурагчдын бүтээлч өдөр тутмын үйл ажиллагааг энэхүү видео танилцуулгаар сонирхоорой.
+          </p>
+          <ul class="list-unstyled text-muted">
+            <li><i class="fas fa-check-circle text-success me-2"></i> СотА хөтөлбөрийн өдөр тутмын амьдрал</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> Хамт олны уур амьсгал</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i> Орчин үеийн дижитал сургалт</li>
+          </ul>
+        </div>
+
+        <!-- Видео хэсэг -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden">
+            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Оюуны Төв Видео" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const carousel = document.querySelector('#smartCarousel');
+    const tabButtons = document.querySelectorAll('.slider-tabs .nav-link');
+
+    function setActiveTab(button) {
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+    }
+
+    if (carousel) {
+      carousel.addEventListener('slid.bs.carousel', function (event) {
+        const index = event.to;
+        setActiveTab(tabButtons[index]);
+      });
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.myNewsSlider', {
+      slidesPerView: 1,
+      spaceBetween: 50,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        },
+        1200: {
+          slidesPerView: 3
+        },
+      }
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    /* Swiper init */
+    new Swiper('.newsSwiper', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        992: {
+          slidesPerView: 3
+        }
+      }
+    });
+
+    /* AOS init */
+    AOS.init({
+      duration: 700,
+      once: true
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".counter");
+
+      const animateCount = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+        const increment = target / 100;
+
+        const update = () => {
+          if (count < target) {
+            count += increment;
+            counter.innerText = Math.ceil(count).toLocaleString();
+            requestAnimationFrame(update);
+          } else {
+            counter.innerText = target.toLocaleString();
+          }
+        };
+
+        update();
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateCount(entry.target);
+            obs.unobserve(entry.target); // Нэг удаа л анимэйт хийнэ
+          }
+        });
+      }, {
+        threshold: 0.5
+      });
+
+      counters.forEach(counter => {
+        observer.observe(counter);
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
